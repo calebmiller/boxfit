@@ -277,8 +277,7 @@ class boxfit:
         if(len(lines)==0):
             raise Exception("No valid fit found")
         bestfit = self.average_lines(lines)
-        equalbounds=self.get_equal_bounds(lines)
-        print("equalbounds=",equalbounds)
+        #equalbounds=self.get_equal_bounds(lines) #in development
         return bestfit 
 
     def get_equal_bounds(self, linelist):
